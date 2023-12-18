@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1439</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form {
+    border-radius: 24%;
+}</string>
+  </property>
+  <widget class="QLabel" name="toobar_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>80</width>
+     <height>900</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	background : #2e2e2e;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>0</y>
+     <width>1360</width>
+     <height>900</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QStackedWidget {
+    border-top-right-radius: 24%;
+}
+
+
+QStackedWidget {
+    border-bottom-right-radius: 24%;
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="home_page">
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background : #161616;
+}</string>
+    </property>
+    <widget class="QLabel" name="task_title_label">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>103</y>
+       <width>61</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Sans Pro</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	color: #fff;
+}</string>
+     </property>
+     <property name="text">
+      <string>TASKS</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="screen_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>516</y>
+       <width>252</width>
+       <height>178</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border: 4px solid #ff9500;
+	border-radius: 10px;
+}</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>252</width>
+        <height>178</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="assets/resource.qrc">:/assets/sample_screenshot.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="footer_spline">
+     <property name="geometry">
+      <rect>
+       <x>-3</x>
+       <y>836</y>
+       <width>282</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	background: #404040;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="footer_text_label">
+     <property name="geometry">
+      <rect>
+       <x>41</x>
+       <y>853</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Sans Pro</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	color: #fff;
+}</string>
+     </property>
+     <property name="text">
+      <string>Show AI Vision preview</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="checkbox_widget_border">
+     <property name="geometry">
+      <rect>
+       <x>-3</x>
+       <y>450</y>
+       <width>282</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	background: #fff;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="combobox_label">
+     <property name="geometry">
+      <rect>
+       <x>-3</x>
+       <y>90</y>
+       <width>282</width>
+       <height>49</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	border-top : 1px solid #404040;
+	border-bottom : 1px solid #404040;
+	background : #161616;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="margin">
+      <number>20</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="assistant_title_label">
+     <property name="geometry">
+      <rect>
+       <x>306</x>
+       <y>50</y>
+       <width>333</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Sans Pro</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	color: #fff;
+}</string>
+     </property>
+     <property name="text">
+      <string>OSVisualInstruct Assistant</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="assistant_spline">
+     <property name="geometry">
+      <rect>
+       <x>282</x>
+       <y>90</y>
+       <width>1078</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	background: #404040;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="switch_checkbox">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>860</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Style for the QCheckBox */
+QCheckBox::indicator {
+    width : 40px;
+    height : 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/assets/Switch1.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/assets/Switch 2.png);
+    animation: toggleAnimation 0.5s ease-in-out;
+}
+
+QCheckBox{
+    color : #fff;
+}
+
+/* Keyframe animation for the toggle effect */
+@keyframes toggleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="message_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>306</x>
+       <y>741</y>
+       <width>1030</width>
+       <height>132</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	border: 1px solid #2e2e2e;
+	border-radius: 24%;
+}</string>
+     </property>
+     <widget class="QLabel" name="messagebox_widget_spline">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>92</y>
+        <width>1030</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background: #404040;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>997</x>
+        <y>102</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+		
+	background-image: url(:/assets/Icon send.png);
+		border : none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="message_content">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>13</y>
+        <width>998</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Source Sans Pro</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit{
+	color: #fff;
+	border:none;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Type your message here....</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="attachment_button">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>102</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon attachment.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="attachment_button_2">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>102</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon microphone.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="header_label">
+     <property name="geometry">
+      <rect>
+       <x>282</x>
+       <y>0</y>
+       <width>1078</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	background : #d68620;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="head_titile">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>282</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Sans Pro</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	background : #d68620;
+	color : #fff;
+	border-right : 0.5px solid #808080;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="title_label">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>7</y>
+       <width>234</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Sans Pro</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color : #fff;
+	background : none;
+}</string>
+     </property>
+     <property name="text">
+      <string>OSViusalInstruct</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>139</y>
+       <width>279</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget {
+    border: none;
+}</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="expanded">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>107</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Style for the QCheckBox */
+QCheckBox::indicator {
+    width : 20px;
+    height : 20px;
+}
+
+QCheckBox::indicator:unchecked {
+   
+	image: url(:/assets/Icon chevron down.png);
+}
+
+QCheckBox::indicator:checked {
+    
+	image: url(:/assets/Icon chevron down - Copy.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>combobox_label</zorder>
+    <zorder>task_title_label</zorder>
+    <zorder>screen_widget</zorder>
+    <zorder>footer_spline</zorder>
+    <zorder>footer_text_label</zorder>
+    <zorder>checkbox_widget_border</zorder>
+    <zorder>assistant_title_label</zorder>
+    <zorder>assistant_spline</zorder>
+    <zorder>switch_checkbox</zorder>
+    <zorder>message_widget</zorder>
+    <zorder>header_label</zorder>
+    <zorder>head_titile</zorder>
+    <zorder>title_label</zorder>
+    <zorder>listWidget</zorder>
+    <zorder>expanded</zorder>
+   </widget>
+   <widget class="QWidget" name="new_task_page">
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background : #161616;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="home_button">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>132</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+		border : none;
+background-image: url(:/assets/Icon home (1).png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="message_button">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>179</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon message (2).png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="plus_new_task_button">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>223</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon plus task.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="info_button">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>848</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon info circle (1).png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="toolbar_splite_line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>826</y>
+     <width>40</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background: #404040;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="assets/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

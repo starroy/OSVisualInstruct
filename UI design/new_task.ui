@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	border-radius: 24%;
+	background: #2e2e2e
+}</string>
+  </property>
+  <widget class="QWidget" name="new_task_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>720</width>
+     <height>804</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+
+	background : #2e2e2e;
+}</string>
+   </property>
+   <widget class="QLabel" name="new_task_title_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>52</y>
+      <width>616</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Create a New Task</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="new_task_splite_line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>109</y>
+      <width>720</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	background : #404040;
+}</string>
+    </property>
+    <property name="text">
+     <string>s</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>126</y>
+      <width>104</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="start_task_label">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>119</y>
+      <width>104</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background:#d68620;
+	color: #fff;
+	border-radius: 19px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Start Task</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time_to_start_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Time to start</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="repeat_task_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>203</y>
+      <width>104</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Repeat task</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="use_my_subtasks_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Use my subtasks</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hide_window_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>286</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Hide window from screenshots</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="task_description_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>349</y>
+      <width>574</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Task Description</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="task_description_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>381</y>
+      <width>656</width>
+      <height>146</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	border-radius : 24%;
+	background : #161616;
+}</string>
+    </property>
+    <widget class="QTextEdit" name="task_description">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>12</y>
+       <width>637</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Sans Pro</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit{
+	color: #fff;
+}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="task_description_label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>541</y>
+      <width>288</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Subtasks</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>580</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 4px solid #fff;
+    border-radius: 12px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 4px solid #fff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="radio_label_1">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>580</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Open Discord and message friend</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>610</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 4px solid #fff;
+    border-radius: 12px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 4px solid #fff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="radio_label_2">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>610</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Open File Explorer</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>640</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 4px solid #fff;
+    border-radius: 12px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 4px solid #fff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="radio_label_3">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>640</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Navigate to downloads</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>670</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 4px solid #fff;
+    border-radius: 12px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 4px solid #fff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="radio_label_4">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>670</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Copy meme, then paste and send to friend in discord</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>700</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 4px solid #fff;
+    border-radius: 12px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 4px solid #fff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="radio_label_5">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>700</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add a Subtask</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time_to_start_label_2">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>170</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Sans Pro</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #fff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Select a Date</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>201</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox::down-arrow {
+    image: url(:/assets/Icon chevron down.png);
+    width: 16px;
+    height: 16px;
+	border: none;
+}
+
+QComboBox{
+	color: #c0c0c0;
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Daily</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Week</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Month</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Year</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>None</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="subtasks_switch_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>246</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Style for the QCheckBox */
+QCheckBox::indicator {
+    width : 40px;
+    height : 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/assets/Switch1.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/assets/Switch 2.png);
+    animation: toggleAnimation 0.5s ease-in-out;
+}
+
+QCheckBox{
+    color : #fff;
+}
+
+/* Keyframe animation for the toggle effect */
+@keyframes toggleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="hide_switch_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>287</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Style for the QCheckBox */
+QCheckBox::indicator {
+    width : 40px;
+    height : 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/assets/Switch1.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/assets/Switch 2.png);
+    animation: toggleAnimation 0.5s ease-in-out;
+}
+
+QCheckBox{
+    color : #fff;
+}
+
+/* Keyframe animation for the toggle effect */
+@keyframes toggleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_button">
+    <property name="geometry">
+     <rect>
+      <x>674</x>
+      <y>16</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border : none;
+	
+	background-image: url(:/assets/Icon times.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="trash_button">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>14</y>
+      <width>30</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon trash.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pencil_button">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>16</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon pencil.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_button">
+    <property name="geometry">
+     <rect>
+      <x>646</x>
+      <y>718</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon save.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calendar_button">
+    <property name="geometry">
+     <rect>
+      <x>307</x>
+      <y>171</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: none;
+	background-image: url(:/assets/Icon calendar week.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="assets/resource.qrc"/>
+  <include location="assets/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
