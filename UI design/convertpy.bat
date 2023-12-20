@@ -1,1 +1,0 @@
-pyuic5 firstpage.ui -o firstpage.py
