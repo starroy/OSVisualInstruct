@@ -1,0 +1,15 @@
+# Ignore */__pycache__/* files
+global-exclude __pycache__/*
+
+# Ignore */Lib/*
+global-exclude Lib/*
+
+# Ignore */Scripts/*
+global-exclude Scripts/*
+
+# Ignore */share/*
+global-exclude share/*
+
+.env
+*.pyc
+**/streamlit_test/env/
