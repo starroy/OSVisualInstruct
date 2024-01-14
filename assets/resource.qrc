@@ -1,0 +1,64 @@
+<RCC>
+  <qresource prefix="/assets">
+    <file>Icon chevron down - Copy.png</file>
+    <file>sample_screenshot.png</file>
+    <file>Icon plus task.png</file>
+    <file>checked.png</file>
+    <file>checkhover.png</file>
+    <file>Icon attachment.png</file>
+    <file>Icon calendar week.png</file>
+    <file>Icon chevron down.png</file>
+    <file>Icon clipboard check (1).png</file>
+    <file>Icon home (1).png</file>
+    <file>Icon info circle (1).png</file>
+    <file>Icon message (2).png</file>
+    <file>Icon microphone.png</file>
+    <file>Icon pencil.png</file>
+    <file>Icon send.png</file>
+    <file>Icon times.png</file>
+    <file>Icon trash.png</file>
+    <file>Radio select.png</file>
+    <file>Radio unselect.png</file>
+    <file>resource.qrc</file>
+    <file>Switch 2.png</file>
+    <file>checked.png</file>
+    <file>checkhover.png</file>
+    <file>Icon attachment.png</file>
+    <file>Icon calendar week.png</file>
+    <file>Icon chevron down.png</file>
+    <file>Icon clipboard check (1).png</file>
+    <file>Icon home (1).png</file>
+    <file>Icon info circle (1).png</file>
+    <file>Icon message (2).png</file>
+    <file>Icon microphone.png</file>
+    <file>Icon pencil.png</file>
+    <file>Icon save.png</file>
+    <file>Icon send.png</file>
+    <file>Icon times.png</file>
+    <file>Icon trash.png</file>
+    <file>Radio select.png</file>
+    <file>Radio unselect.png</file>
+    <file>resource.qrc</file>
+    <file>Switch 2.png</file>
+    <file>Switch1.png</file>
+    <file>unchecked.png</file>
+    <file>uncheckhover.png</file>
+    <file>Switch1.png</file>
+    <file>unchecked.png</file>
+    <file>uncheckhover.png</file>
+    <file>Icon attachment.png</file>
+    <file>Icon microphone.png</file>
+    <file>Icon send.png</file>
+    <file>Switch 2.png</file>
+    <file>Switch1.png</file>
+    <file>Icon chevron down.png</file>
+    <file>uncheckhover.png</file>
+    <file>checkhover.png</file>
+    <file>Icon clipboard check (1).png</file>
+    <file>checked.png</file>
+    <file>unchecked.png</file>
+    <file>Icon home (1).png</file>
+    <file>Icon info circle (1).png</file>
+    <file>Icon message (2).png</file>
+  </qresource>
+</RCC>
